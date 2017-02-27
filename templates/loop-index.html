@@ -1,5 +1,10 @@
 <div class=container>
   <div class="row">
-    {{ loopIndexCtrl.sanity }}
+    <div class="loop col-md-6 col-offset-md-3" ng-repeat="loop in loopIndexCtrl.loops">
+      <p>{{ loop.name }}</p>
+      <p>{{ loop.instrument }}</p>
+      <p>{{ loop.tags }}</p>
+      <p>{{ loop.loopUrl }}</p>
+    </div>
   </div>
 </div>

@@ -7,12 +7,12 @@ angular
   function config(   $routeProvider,   $locationProvider){
     $routeProvider
       .when('/', {
-        templateUrl: '/templates/loop-index.html',
+        templateUrl: '/templates/loop-index',
         controller: 'LoopIndexController',
         controllerAs: 'loopIndexCtrl'
       })
       .when('/loops/:id', {
-        templateUrl: '/templates/loop-show.html',
+        templateUrl: '/templates/loop-show',
         controller: 'LoopShowController',
         controllerAs: 'loopShowCtrl'
       });
