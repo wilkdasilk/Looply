@@ -7,7 +7,8 @@ LoopIndexController.$inject = ['$http'];
 function LoopIndexController(  $http  ){
   var vm = this;
   var dbUrl = "";
-  vm.loops = []
+  vm.loops = [];
+  vm.sanity = "Connected!";
 
 
   $http.get(dbUrl).then(loadLoops, logError);
