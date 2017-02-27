@@ -5,28 +5,28 @@ var db = require("./models");
 
 var loopList =[];
 loopList.push({
-              name: 'Nine Inch Nails',
-              instrument: 'The Downward Spiral',
-              tags: [ 'industrial', 'industrial metal' ],
-              loopUrl: 'audio/drum1'
+              name: 'Andy Rodrigues',
+              instrument: 'Drums',
+              tags: [ 'house', 'tribal' ],
+              loopUrl: '/audio/drum1.wav'
             });
 loopList.push({
-              name: 'Nine Inch Nails',
-              instrument: 'The Downward Spiral',
-              tags: [ 'industrial', 'industrial metal' ],
-              loopUrl: 'audio/drum2'
+              name: 'MoNKEY',
+              instrument: 'Drums',
+              tags: [ 'electro', '808' ],
+              loopUrl: '/audio/drum2.wav'
             });
 loopList.push({
-              name: 'Nine Inch Nails',
-              instrument: 'The Downward Spiral',
-              tags: [ 'industrial', 'industrial metal' ],
-              loopUrl: 'audio/bass1'
+              name: 'Lunchtime',
+              instrument: 'Bass',
+              tags: [ 'electro', 'synth' ],
+              loopUrl: '/audio/bass1.wav'
             });
 loopList.push({
-              name: 'Nine Inch Nails',
-              instrument: 'The Downward Spiral',
-              tags: [ 'industrial', 'industrial metal' ],
-              loopUrl: 'audio/bass2'
+              name: 'Old School',
+              instrument: 'Keys',
+              tags: [ 'House', 'organ' ],
+              loopUrl: '/audio/keys.wav'
             });
 
 

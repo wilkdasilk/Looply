@@ -1,10 +1,12 @@
 <div class=container>
   <div class="row">
-    <div class="loop col-md-6 col-offset-md-3" ng-repeat="loop in loopIndexCtrl.loops">
-      <p>{{ loop.name }}</p>
-      <p>{{ loop.instrument }}</p>
-      <p>{{ loop.tags }}</p>
-      <p>{{ loop.loopUrl }}</p>
+    <div class="loop col-md-6 col-md-offset-3" ng-repeat="loop in loopIndexCtrl.loops">
+      <a ng-href="{{'/loops/' + loop._id }}"><h4>{{ loop.name }}</h4></a>
+      <p>Instrument: {{ loop.instrument }}</p>
+      <p>Tags: <span ng-repeat="tag in loop.tags">{{ tag }} | </span></p>
+      <audio controls>
+        <source ng-src="{{ loop.loopUrl }}" type="audio/wav">
+      </audio>
     </div>
   </div>
 </div>

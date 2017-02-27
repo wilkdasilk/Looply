@@ -1,0 +1,12 @@
+<div class=container>
+  <div class="row">
+    <div class="loop col-md-6 col-md-offset-3">
+      <a ng-href="{{'/loops/' + loopShowCtrl.loops._id }}"><h4>{{ loopShowCtrl.loops.name }}</h4></a>
+      <p>Instrument: {{ loopShowCtrl.loops.instrument }}</p>
+      <p>Tags: <span ng-repeat="tag in loopShowCtrl.loops.tags">{{ tag }} | </span></p>
+      <audio controls>
+        <source ng-src="{{ loopShowCtrl.loops.loopUrl }}" type="audio/wav">
+      </audio>
+    </div>
+  </div>
+</div>
