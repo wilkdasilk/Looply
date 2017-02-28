@@ -13,6 +13,7 @@ function LoopShowController(  $http  ,  $routeParams){
   $http.get(dbUrl + $routeParams.id ).then(loadLoops, logError);
 
   function loadLoops(response){
+    console.log(response.data);
     vm.loops = response.data;
   }
 
